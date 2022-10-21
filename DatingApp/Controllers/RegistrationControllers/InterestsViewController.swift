@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 import Alamofire
+import Firebase
+import FirebaseAuth
 
 class InterestsViewController: UIViewController {
     
@@ -338,14 +340,32 @@ class InterestsViewController: UIViewController {
                             
                             User.ava = avaImgURL
                             
+                            let values = ["email": User.email, "firstName": User.firstName, "ava": User.ava]
+                            
+                            Database.database(url: "https://datingapp-80400-default-rtdb.asia-southeast1.firebasedatabase.app").reference().child("users").child(User.uid).updateChildValues(values) { error, ref in
+                            
+                            //Database.database().reference().child("users").child(uid).updateChildValues(values) { error, ref in
+                                
+                                print("and here")
+                                
+                                if let error = error {
+                                    
+                                    print("firebase error here \(error.localizedDescription)")
+                                        return
+                                      }
+                                
+                                let vc = HomeTabBarController()//HomeViewController() //your view controller
+                                                           vc.modalPresentationStyle = .overFullScreen
+                                                           self.present(vc, animated: true, completion: nil)
+                                                           
+                                                           print("why aren't we moving from here2")
+                                                           
+                                
+                            }
+                            
                             print("why aren't we moving from here")
                             
-                            let vc = HomeViewController() //your view controller
-                            vc.modalPresentationStyle = .overFullScreen
-                            self.present(vc, animated: true, completion: nil)
-                            
-                            print("why aren't we moving from here2")
-                            
+                           
                         // error while uploading
                         } else {
                             
@@ -385,11 +405,11 @@ class InterestsViewController: UIViewController {
                 request.httpMethod = "POST"
                 request.cachePolicy = NSURLRequest.CachePolicy.reloadIgnoringCacheData
                 
-                
+            
                 
             //let paramString: String = "email=\(User.email)&firstName=\(User.firstName)&phoneNumber=\(User.phone)&birthday=\(User.birthday)&gender=\(User.gender)&Interested_In=\(User.matching)&Interests=\(User.interests)&Looking_For=\(User.lookingFor)&Facebook_link=\(User.Facebook_link)"
             
-            let paramString: String = "email=cheesetoochalk6@yahoo.com&firstName=\(User.firstName)&phoneNumber=\(User.phone)&birthday=\(User.birthday)&gender=\(User.gender)&Interested_In=\(User.matching)&Interests=\(joined)&Looking_For=\(User.lookingFor)&Facebook_link=something7&cover=\(emptyString)&ava=\(emptyString)"
+            let paramString: String = "uid=\(User.uid)&email=cheesetoochalk17@yahoo.com&firstName=\(User.firstName)&phoneNumber=\(User.phone)&birthday=\(User.birthday)&gender=\(User.gender)&Interested_In=\(User.matching)&Interests=\(joined)&Looking_For=\(User.lookingFor)&Facebook_link=something17&cover=\(emptyString)&ava=\(emptyString)"
             
             
             print("param stuff \(paramString) \(User.lookingFor)  \(User.interests)  \(User.gender)  \(User.matching)  \(User.firstName)  \(User.birthday)")
@@ -443,10 +463,18 @@ class InterestsViewController: UIViewController {
                                     let email = parsedJSON["email"] as! String
                                     let id =    parsedJSON["id"] as! String
                                     let firstName = parsedJSON["firstName"] as! String
+                                    let uid = parsedJSON["uid"] as! String
                                     
+                                    User.email = email
                                     
+                                    User.uid = uid
+                                    
+                                    print("need to check that you go here")
+                                    
+                                  
                                     
                                     self.uploadImage(id: id)
+                                    
                                     
                                     print("email stuff \(email)")
                                     

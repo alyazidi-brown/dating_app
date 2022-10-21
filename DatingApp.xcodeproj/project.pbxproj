@@ -15,11 +15,23 @@
 		53023CA728AD954700E29AFB /* ProfileImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53023CA628AD954700E29AFB /* ProfileImagesViewController.swift */; };
 		53023CA928AE159300E29AFB /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53023CA828AE159300E29AFB /* GenderViewController.swift */; };
 		530EF75D28AC6E54006A7578 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530EF75C28AC6E54006A7578 /* Helper.swift */; };
+		5310CE9828ECCA6F0045016F /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5310CE9728ECCA6F0045016F /* Landmark.swift */; };
+		5310CE9A28ED02BE0045016F /* PreDiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5310CE9928ED02BE0045016F /* PreDiscoveryViewController.swift */; };
+		5310CE9C28ED0A740045016F /* TableCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5310CE9B28ED0A740045016F /* TableCell2.swift */; };
+		5310CE9E28ED0C1F0045016F /* PlaceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5310CE9D28ED0C1F0045016F /* PlaceList.swift */; };
+		5312901528E271EC00FE3335 /* UserFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5312901428E271EC00FE3335 /* UserFirebase.swift */; };
+		5312901A28E2D21900FE3335 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5312901928E2D21900FE3335 /* TableCell.swift */; };
+		5312901C28E2D61A00FE3335 /* DiscoveryStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5312901B28E2D61A00FE3335 /* DiscoveryStruct.swift */; };
 		5312E65B28B013D6002B9215 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5312E65A28B013D6002B9215 /* User.swift */; };
+		532341E928DD224B00924080 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 532341E828DD224B00924080 /* GoogleService-Info.plist */; };
 		5332592528BE6F1D001CE11B /* HomeCover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5332592428BE6F1D001CE11B /* HomeCover.jpg */; };
 		5332592728BE6F5B001CE11B /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 5332592628BE6F5B001CE11B /* user.png */; };
 		5332592928BEEBDD001CE11B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332592828BEEBDD001CE11B /* UserModel.swift */; };
 		5359EFA928BDB2800086213B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5359EFA828BDB2800086213B /* HomeViewController.swift */; };
+		536B35B028CF99B700C4CA11 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B35AF28CF99B700C4CA11 /* HomeTabBarController.swift */; };
+		536B35B228CF9F6700C4CA11 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B35B128CF9F6700C4CA11 /* DiscoveryViewController.swift */; };
+		536B35B428CF9F9A00C4CA11 /* FeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B35B328CF9F9A00C4CA11 /* FeaturesViewController.swift */; };
+		536B35B628CFC34E00C4CA11 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B35B528CFC34E00C4CA11 /* LogInViewController.swift */; };
 		536B72C22899C16A00011549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B72C12899C16A00011549 /* AppDelegate.swift */; };
 		536B72C42899C16A00011549 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B72C32899C16A00011549 /* SceneDelegate.swift */; };
 		536B72C62899C16A00011549 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B72C52899C16A00011549 /* RegistrationViewController.swift */; };
@@ -29,7 +41,6 @@
 		536B72D92899C16E00011549 /* DatingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B72D82899C16E00011549 /* DatingAppTests.swift */; };
 		536B72E32899C16E00011549 /* DatingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B72E22899C16E00011549 /* DatingAppUITests.swift */; };
 		536B72E52899C16E00011549 /* DatingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B72E42899C16E00011549 /* DatingAppUITestsLaunchTests.swift */; };
-		536B72F22899C3A400011549 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 536B72F12899C3A400011549 /* GoogleService-Info.plist */; };
 		536B73082899CF2200011549 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B73072899CF2200011549 /* EmailViewController.swift */; };
 		536B730A2899D51C00011549 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B73092899D51C00011549 /* AuthManager.swift */; };
 		536B730C2899DBCB00011549 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B730B2899DBCB00011549 /* PhoneViewController.swift */; };
@@ -37,6 +48,7 @@
 		536B73102899DE4D00011549 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B730F2899DE4D00011549 /* AccountViewController.swift */; };
 		53760092289ED3B9006633E7 /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53760091289ED3B9006633E7 /* InstagramViewController.swift */; };
 		53760094289F03A9006633E7 /* AppleAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53760093289F03A9006633E7 /* AppleAuthViewController.swift */; };
+		5382750628D8114300FEB804 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5382750528D8114300FEB804 /* Service.swift */; };
 		538F75FD28AE816200150812 /* LookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538F75FC28AE816200150812 /* LookingViewController.swift */; };
 		538F75FF28AE8B4F00150812 /* MatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538F75FE28AE8B4F00150812 /* MatchingViewController.swift */; };
 		538F760128AE9B5300150812 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538F760028AE9B5300150812 /* InterestsViewController.swift */; };
@@ -70,11 +82,24 @@
 		53023CA628AD954700E29AFB /* ProfileImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImagesViewController.swift; sourceTree = "<group>"; };
 		53023CA828AE159300E29AFB /* GenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
 		530EF75C28AC6E54006A7578 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		5310CE9628ECC86D0045016F /* Riyadh, Saudi Arabia.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Riyadh, Saudi Arabia.gpx"; sourceTree = "<group>"; };
+		5310CE9728ECCA6F0045016F /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		5310CE9928ED02BE0045016F /* PreDiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreDiscoveryViewController.swift; sourceTree = "<group>"; };
+		5310CE9B28ED0A740045016F /* TableCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell2.swift; sourceTree = "<group>"; };
+		5310CE9D28ED0C1F0045016F /* PlaceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceList.swift; sourceTree = "<group>"; };
+		5312901428E271EC00FE3335 /* UserFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFirebase.swift; sourceTree = "<group>"; };
+		5312901928E2D21900FE3335 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		5312901B28E2D61A00FE3335 /* DiscoveryStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryStruct.swift; sourceTree = "<group>"; };
 		5312E65A28B013D6002B9215 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		532341E828DD224B00924080 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5332592428BE6F1D001CE11B /* HomeCover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HomeCover.jpg; sourceTree = "<group>"; };
 		5332592628BE6F5B001CE11B /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		5332592828BEEBDD001CE11B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		5359EFA828BDB2800086213B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		536B35AF28CF99B700C4CA11 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		536B35B128CF9F6700C4CA11 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
+		536B35B328CF9F9A00C4CA11 /* FeaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesViewController.swift; sourceTree = "<group>"; };
+		536B35B528CFC34E00C4CA11 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		536B72BE2899C16A00011549 /* DatingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		536B72C12899C16A00011549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		536B72C32899C16A00011549 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,7 +113,6 @@
 		536B72DE2899C16E00011549 /* DatingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		536B72E22899C16E00011549 /* DatingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatingAppUITests.swift; sourceTree = "<group>"; };
 		536B72E42899C16E00011549 /* DatingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		536B72F12899C3A400011549 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		536B73062899CC7100011549 /* DatingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DatingApp.entitlements; sourceTree = "<group>"; };
 		536B73072899CF2200011549 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		536B73092899D51C00011549 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
@@ -97,6 +121,7 @@
 		536B730F2899DE4D00011549 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		53760091289ED3B9006633E7 /* InstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
 		53760093289F03A9006633E7 /* AppleAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthViewController.swift; sourceTree = "<group>"; };
+		5382750528D8114300FEB804 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		538F75FC28AE816200150812 /* LookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookingViewController.swift; sourceTree = "<group>"; };
 		538F75FE28AE8B4F00150812 /* MatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingViewController.swift; sourceTree = "<group>"; };
 		538F760028AE9B5300150812 /* InterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +188,35 @@
 			path = RegistrationControllers;
 			sourceTree = "<group>";
 		};
+		530E687D28D6621F0061BF16 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				536B35B528CFC34E00C4CA11 /* LogInViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		5312901828E2C52F00FE3335 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5312901928E2D21900FE3335 /* TableCell.swift */,
+				5310CE9B28ED0A740045016F /* TableCell2.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		536B35AE28CF999100C4CA11 /* HomeController */ = {
+			isa = PBXGroup;
+			children = (
+				5359EFA828BDB2800086213B /* HomeViewController.swift */,
+				536B35AF28CF99B700C4CA11 /* HomeTabBarController.swift */,
+				536B35B128CF9F6700C4CA11 /* DiscoveryViewController.swift */,
+				536B35B328CF9F9A00C4CA11 /* FeaturesViewController.swift */,
+				5310CE9928ED02BE0045016F /* PreDiscoveryViewController.swift */,
+			);
+			path = HomeController;
+			sourceTree = "<group>";
+		};
 		536B72B52899C16A00011549 = {
 			isa = PBXGroup;
 			children = (
@@ -194,13 +248,14 @@
 				53023C9728AD3C1900E29AFB /* View */,
 				53E4A272289AE7D200F88DA5 /* Model */,
 				53E4A271289AE7AF00F88DA5 /* Controllers */,
+				5382750428D8110F00FEB804 /* Service */,
 				536B73062899CC7100011549 /* DatingApp.entitlements */,
-				536B72F12899C3A400011549 /* GoogleService-Info.plist */,
 				536B72C12899C16A00011549 /* AppDelegate.swift */,
 				536B72C32899C16A00011549 /* SceneDelegate.swift */,
 				536B72C72899C16A00011549 /* Main.storyboard */,
 				536B72CA2899C16E00011549 /* Assets.xcassets */,
 				536B72CC2899C16E00011549 /* LaunchScreen.storyboard */,
+				532341E828DD224B00924080 /* GoogleService-Info.plist */,
 				536B72CF2899C16E00011549 /* Info.plist */,
 			);
 			path = DatingApp;
@@ -223,13 +278,24 @@
 			path = DatingAppUITests;
 			sourceTree = "<group>";
 		};
+		5382750428D8110F00FEB804 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5382750528D8114300FEB804 /* Service.swift */,
+				5310CE9628ECC86D0045016F /* Riyadh, Saudi Arabia.gpx */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		53E4A271289AE7AF00F88DA5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5312901828E2C52F00FE3335 /* Cells */,
+				530E687D28D6621F0061BF16 /* Authentication */,
+				536B35AE28CF999100C4CA11 /* HomeController */,
 				53023CA128AD653300E29AFB /* RegistrationControllers */,
 				536B72C52899C16A00011549 /* RegistrationViewController.swift */,
 				536B730F2899DE4D00011549 /* AccountViewController.swift */,
-				5359EFA828BDB2800086213B /* HomeViewController.swift */,
 				536B730B2899DBCB00011549 /* PhoneViewController.swift */,
 				536B730D2899DD4300011549 /* SMSCodeViewController.swift */,
 				536B73072899CF2200011549 /* EmailViewController.swift */,
@@ -247,6 +313,10 @@
 				530EF75C28AC6E54006A7578 /* Helper.swift */,
 				5312E65A28B013D6002B9215 /* User.swift */,
 				5332592828BEEBDD001CE11B /* UserModel.swift */,
+				5312901428E271EC00FE3335 /* UserFirebase.swift */,
+				5310CE9D28ED0C1F0045016F /* PlaceList.swift */,
+				5312901B28E2D61A00FE3335 /* DiscoveryStruct.swift */,
+				5310CE9728ECCA6F0045016F /* Landmark.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,14 +350,13 @@
 				536B72BB2899C16A00011549 /* Frameworks */,
 				536B72BC2899C16A00011549 /* Resources */,
 				8BACFF87D80EE9D9181573B0 /* [CP] Embed Pods Frameworks */,
+				E0022286B844A84D6229A675 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = DatingApp;
-			packageProductDependencies = (
-			);
 			productName = DatingApp;
 			productReference = 536B72BE2899C16A00011549 /* DatingApp.app */;
 			productType = "com.apple.product-type.application";
@@ -380,11 +449,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				536B72CE2899C16E00011549 /* LaunchScreen.storyboard in Resources */,
-				536B72F22899C3A400011549 /* GoogleService-Info.plist in Resources */,
 				5332592728BE6F5B001CE11B /* user.png in Resources */,
 				5332592528BE6F1D001CE11B /* HomeCover.jpg in Resources */,
 				536B72CB2899C16E00011549 /* Assets.xcassets in Resources */,
 				536B72C92899C16A00011549 /* Main.storyboard in Resources */,
+				532341E928DD224B00924080 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +513,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DatingApp/Pods-DatingApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E0022286B844A84D6229A675 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DatingApp/Pods-DatingApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DatingApp/Pods-DatingApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DatingApp/Pods-DatingApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -452,11 +538,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				538F75FD28AE816200150812 /* LookingViewController.swift in Sources */,
+				536B35B228CF9F6700C4CA11 /* DiscoveryViewController.swift in Sources */,
 				536B72C62899C16A00011549 /* RegistrationViewController.swift in Sources */,
 				536B72C22899C16A00011549 /* AppDelegate.swift in Sources */,
 				536B73102899DE4D00011549 /* AccountViewController.swift in Sources */,
+				536B35B028CF99B700C4CA11 /* HomeTabBarController.swift in Sources */,
 				538F760128AE9B5300150812 /* InterestsViewController.swift in Sources */,
 				536B730E2899DD4300011549 /* SMSCodeViewController.swift in Sources */,
+				5310CE9A28ED02BE0045016F /* PreDiscoveryViewController.swift in Sources */,
+				5312901528E271EC00FE3335 /* UserFirebase.swift in Sources */,
 				536B72C42899C16A00011549 /* SceneDelegate.swift in Sources */,
 				53E4A274289AEF0D00F88DA5 /* FacebookViewController.swift in Sources */,
 				5332592928BEEBDD001CE11B /* UserModel.swift in Sources */,
@@ -466,14 +556,22 @@
 				5359EFA928BDB2800086213B /* HomeViewController.swift in Sources */,
 				536B730C2899DBCB00011549 /* PhoneViewController.swift in Sources */,
 				536B73082899CF2200011549 /* EmailViewController.swift in Sources */,
+				5312901A28E2D21900FE3335 /* TableCell.swift in Sources */,
+				5382750628D8114300FEB804 /* Service.swift in Sources */,
 				53023C9C28AD3E5C00E29AFB /* Extensions.swift in Sources */,
 				53760094289F03A9006633E7 /* AppleAuthViewController.swift in Sources */,
 				53023CA728AD954700E29AFB /* ProfileImagesViewController.swift in Sources */,
+				536B35B628CFC34E00C4CA11 /* LogInViewController.swift in Sources */,
+				5310CE9C28ED0A740045016F /* TableCell2.swift in Sources */,
 				53023CA528AD668400E29AFB /* AuthButton.swift in Sources */,
+				536B35B428CF9F9A00C4CA11 /* FeaturesViewController.swift in Sources */,
 				53023C9E28AD3F3C00E29AFB /* CheckBox.swift in Sources */,
+				5312901C28E2D61A00FE3335 /* DiscoveryStruct.swift in Sources */,
 				536B730A2899D51C00011549 /* AuthManager.swift in Sources */,
 				53760092289ED3B9006633E7 /* InstagramViewController.swift in Sources */,
 				530EF75D28AC6E54006A7578 /* Helper.swift in Sources */,
+				5310CE9E28ED0C1F0045016F /* PlaceList.swift in Sources */,
+				5310CE9828ECCA6F0045016F /* Landmark.swift in Sources */,
 				53023CA928AE159300E29AFB /* GenderViewController.swift in Sources */,
 				5312E65B28B013D6002B9215 /* User.swift in Sources */,
 			);

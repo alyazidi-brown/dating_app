@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import CoreLocation
 
 
 struct User {
     
+    static var uid = ""
     static var email = ""
     static var phone = ""
     static var gender = ""
@@ -22,5 +24,7 @@ struct User {
     static var avaImgData = Data()
     static var cover = ""
     static var ava = ""
+    static var place = ""
+    static var location = CLLocation()
     
 }

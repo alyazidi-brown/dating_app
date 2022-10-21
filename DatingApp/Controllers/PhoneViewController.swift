@@ -9,6 +9,8 @@ import UIKit
 
 class PhoneViewController: UIViewController, UITextFieldDelegate {
     
+    var signUp : Bool = false
+    
     private let phoneField: UITextField = {
         
       let field = UITextField()
@@ -49,18 +51,11 @@ class PhoneViewController: UIViewController, UITextFieldDelegate {
                 
                 print("You make it here?")
                 
-                
-                
-                
-                DispatchQueue.main.async {
-                    /*
-                    let vc = SMSCodeViewController()
-                    vc.title = "Enter Code"
-                    self?.navigationController?.pushViewController(vc, animated: true)
-                     */
+                DispatchQueue.main.async { [self] in
                     
                     
                     let vc =  SMSCodeViewController() //your view controller
+                    vc.signUp = self!.signUp
                     vc.title = "Enter Code"
                     vc.modalPresentationStyle = .overFullScreen
                     self!.present(vc, animated: true, completion: nil)

@@ -8,6 +8,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fb438040594912997</string>
+				<string>app-1-9388810413-ios-4b66f0147b9f3ca286e624</string>
 			</array>
 		</dict>
 		<dict>
@@ -29,7 +30,21 @@
 	<array>
 		<string>fbapi</string>
 		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Please allow us to access your location to find you rides nearby</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Please allow us to access your location to find you rides nearby</string>
+	<key>NSLocationDefaultAccuracyReduced</key>
+	<false/>
+	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
+	<dict>
+		<key>ForDelivery</key>
+		<string>Help your driver delivery items on time</string>
+	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Please allow us to access your location to find you rides nearby</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

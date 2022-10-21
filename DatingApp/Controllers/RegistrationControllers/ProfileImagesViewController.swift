@@ -345,18 +345,20 @@ class ProfileImagesViewController: UIViewController {
         
     @objc func continueAction() {
         
+        /*
         if self.imageCount < 6 {
             
             self.presentAlertController(withTitle: "Need more Pictures", message: "Please Select More Pictures")
             
             
         } else {
+         */
             
         let vc = GenderViewController() //your view controller
         vc.modalPresentationStyle = .overFullScreen
         self.present(vc, animated: true, completion: nil)
             
-        }
+       // }
             
         }
 

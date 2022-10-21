@@ -9,6 +9,8 @@ import UIKit
 
 class SMSCodeViewController: UIViewController, UITextFieldDelegate {
     
+    var signUp : Bool = false
+    
     private let codeField: UITextField = {
         
       let field = UITextField()
@@ -35,15 +37,27 @@ class SMSCodeViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         
         if let text = textField.text, !text.isEmpty {
-            
+           print("try here")
             let code = text
             AuthManager.shared.verifyCode(smsCode: code) {[weak self] success in
+                print("try here2")
                 guard success else {return}
                 
+                print("try here3")
+                
                 DispatchQueue.main.async {
-                    let vc = InputViewController()//EmailViewController()//InputViewController()
+                    if self!.signUp == true {
+                    let vc = InputViewController()//FacebookViewController()//InputViewController()//EmailViewController()//InputViewController()
                     vc.title = "Enter Code"
                     self?.present(vc, animated: true)
+                        
+                    } else {
+                        
+                        let vc = HomeTabBarController()
+                        self!.present(vc, animated: true, completion: nil)
+                        
+                        
+                    }
                     
                 }
             }

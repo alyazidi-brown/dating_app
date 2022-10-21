@@ -24,11 +24,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        let vc = PhoneViewController()//RegistrationViewController()//InputViewController()
+        if Auth.auth().currentUser == nil{
+        
+        let vc = LogInViewController()//RegistrationViewController()//InputViewController()
+        vc.view.backgroundColor = .white
+        window.rootViewController = vc
+            
+            
+        } else {
+            
+            window.rootViewController = HomeTabBarController()
+        }
+        
+        
+        /*
+        let vc = LogInViewController()//HomeTabBarController()//EmailViewController()//PhoneViewController()//RegistrationViewController()//InputViewController()
         vc.view.backgroundColor = .white
         window.rootViewController = vc
         
-        /*
+       
         if Auth.auth().currentUser == nil{
         
         let vc = PhoneViewController()//RegistrationViewController()//InputViewController()

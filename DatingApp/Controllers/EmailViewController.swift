@@ -99,8 +99,9 @@ class EmailViewController: UIViewController, UITextFieldDelegate, MFMailComposeV
                 let alert = UIAlertController(title: "Check your email for link", message: number, preferredStyle: UIAlertController.Style.alert)
 
                 // add an action (button)
-               // alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action: UIAlertAction!) in
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                
+              /*   alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action: UIAlertAction!) in
                     print("Handle Ok logic here")
                     
                     
@@ -124,7 +125,7 @@ class EmailViewController: UIViewController, UITextFieldDelegate, MFMailComposeV
                                 }
                     
                      
-                    }))
+                    }))*/
                  
 
                 // show the alert

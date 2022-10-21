@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class InputViewController: UIViewController {
     
@@ -140,6 +141,10 @@ class InputViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         view.backgroundColor = .white
+        
+        guard let currentUid = Auth.auth().currentUser?.uid else { return }
+        
+        User.uid = currentUid
         
         configureUI()
         

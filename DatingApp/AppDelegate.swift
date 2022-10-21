@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
@@ -29,13 +28,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         
                         self.window = UIWindow()
                         
-                        let vc =  PhoneViewController()//InputViewController()//RegistrationViewController()//InputViewController()
+                        let vc =  LogInViewController()//HomeTabBarController()//EmailViewController()//InputViewController()//RegistrationViewController()//InputViewController()
                         vc.view.backgroundColor = .white
                         self.window!.rootViewController = vc
                         self.window!.makeKeyAndVisible()
                                         
                     }
         
+      
         FirebaseApp.configure()
         return true
     }
@@ -133,4 +133,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
 
